@@ -9,7 +9,7 @@ print (data)
 data.prices.hist()
 plt.show()
 
-grouped_data=data.grouppby(by="categories").mean()
+grouped_data = data.groupby(by="categories").mean()
 plt.bar(grouped_data.index, grouped_data.prices)
 plt.show()
 
