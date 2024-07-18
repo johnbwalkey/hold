@@ -9,12 +9,13 @@ print (data)
 data.prices.hist()
 plt.show()
 
+data =pd.read_excel("mydata.xlsx")
 grouped_data = data.groupby(by="categories").mean()
 plt.bar(grouped_data.index, grouped_data.prices)
 plt.show()
 
 # comment out selected line by doing ctrl and /
-
+data =pd.read_excel("mydata.xlsx")
 One_category = pd.get_dummies(data.categories)
 data  = data.join(One_category)
 data.drop(["categories"], axis=1)
