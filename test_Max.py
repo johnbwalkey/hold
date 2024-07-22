@@ -1,5 +1,7 @@
 print("hello")
-print(2) #TODO: test to do ...
+print(2) #TODO: test
 
-
-d=4
+message ="World"
+print(dir(message))
+#Q: what does dir do here?
+#A:
