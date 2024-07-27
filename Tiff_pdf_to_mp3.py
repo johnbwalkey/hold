@@ -1,4 +1,4 @@
-import pyttsx3,PyPDF2
+import source .venv,PyPDF2
 
 #insert name of your pdf 
 pdfreader = PyPDF2.PdfFileReader(open('Committee_Meeting_June_2024.pdf', 'rb'))
