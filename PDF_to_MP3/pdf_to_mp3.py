@@ -9,14 +9,17 @@ import PyPDF2
 from gtts import gTTS
 import os
 
+from PyPDF2 import PdfReader
+from gtts import gTTS
+import os
+
 # Function to extract text from a PDF file
 def extract_text_from_pdf(pdf_path):
     try:
         with open(pdf_path, 'rb') as file:
-            pdf_reader = PyPDF2.PdfFileReader(file)
+            pdf_reader = PdfReader(file)
             text = ''
-            for page_num in range(pdf_reader.numPages):
-                page = pdf_reader.getPage(page_num)
+            for page in pdf_reader.pages:
                 text += page.extract_text()
         return text
     except FileNotFoundError:
@@ -42,14 +45,16 @@ def pdf_to_mp3(pdf_path, mp3_path):
         text_to_speech(text, mp3_path)
 
 # Example usage
-pdf_path = 'C:\\path\\to\\your\\example.pdf'  # Replace with your PDF file path
-mp3_path = 'C:\\path\\to\\your\\output.mp3'  # Replace with desired MP3 file path
+pdf_path = 'C:\\Users\\john\\OneDrive\\Desktop\\hold\\PDF_to_MP3\\Committee_Meeting_June_2024.pdf'  # Replace with your PDF file path
+mp3_path = 'C:\\Users\\john\\OneDrive\\Desktop\\hold\\PDF_to_MP3\\output.mp3'  # Replace with desired MP3 file path
+
 
 # Convert relative paths to absolute paths
 pdf_path = os.path.abspath(pdf_path)
 mp3_path = os.path.abspath(mp3_path)
 
 pdf_to_mp3(pdf_path, mp3_path)
+
 
 
 
