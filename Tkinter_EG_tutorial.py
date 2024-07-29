@@ -1,5 +1,8 @@
 import tkinter as tk
 from tkinter import ttk
+# from https://www.youtube.com/watch?v=epDKamC-V-8
+#
+
 
 root = tk.Tk()
 root.title("Simple App")
@@ -22,12 +25,12 @@ frame.grid(row=0, column=0, sticky="nsew", padx=5, pady=5)
 frame.columnconfigure(0, weight=1)
 frame.rowconfigure(1, weight=1)
 
-entry = ttk.Entry(frame)
+entry = tk.Entry(frame)
 entry.grid(row=0, column=0, sticky="ew")
 
 entry.bind("<Return>", add_to_list)
 
-entry_btn = ttk.Button(frame, text="Add", command=add_to_list)
+entry_btn = tk.Button(frame, text="Add", command=add_to_list)
 entry_btn.grid(row=0, column=1)
 
 text_list = tk.Listbox(frame)
