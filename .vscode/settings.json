@@ -1,0 +1,10 @@
+{
+    // Use the repo's virtual environment
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+
+    // Jupyter: always use this interpreter
+    "jupyter.defaultKernel": "Python (hold venv)",
+
+    // Nice-to-have: activate venv automatically in terminal
+    "python.terminal.activateEnvironment": true
+}
