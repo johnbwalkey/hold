@@ -6,5 +6,6 @@
     "jupyter.defaultKernel": "Python (hold venv)",
 
     // Nice-to-have: activate venv automatically in terminal
-    "python.terminal.activateEnvironment": true
+    "python.terminal.activateEnvironment": true,
+    "python-envs.pythonProjects": []
 }
