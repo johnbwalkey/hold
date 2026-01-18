@@ -1,5 +1,9 @@
 {
+  // Use the repo's virtual environment
   "python.defaultInterpreterPath": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+
+  // Always activate the venv in terminal
   "python.terminal.activateEnvironment": true
 }
+
 

@@ -5,5 +5,8 @@ __pycache__/
 .DS_Store
 data/
 
+.vscode/settings.json
+
+
 # Python virtual environment
 .venv/
