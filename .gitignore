@@ -1,12 +1,13 @@
-__pycache__/
-.ipynb_checkpoints/
-*.pyc
-.env
-.DS_Store
-data/
-
-.vscode/settings.json
-
-
-# Python virtual environment
+# Python virtual env
 .venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# OS junk
+.DS_Store
+Thumbs.db
